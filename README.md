@@ -1,4 +1,12 @@
-# Overlapped Speech detection in Multi-party Conversations
+
+# Overlapped Speech detection in multi-party conversations
+
+*******************************************************
+Authors: Neeraj Sajjan, Shobhana Ganesh, Neeraj Sharma, Sriram Ganapathy, Neville Ryant
+
+Reference: N. Sajjan, S. Ganesh, N. Sharma, S. Ganapathy, N.Ryant, "Leveraging LSTM models for overlap detection in multi-party meetings", IEEE International Conference on Acoustics, Speech and Signal Processing, April 2018.
+
+********************************************************
 
 This is a project on overlapped speech detection in multi-party conversation meetings. We explore the effectivness of various features such as Mel Spectrogram, kurtosis etc using a neural network approach on two datasets: [TIMIT](https://catalog.ldc.upenn.edu/ldc93s1) and [AMI](http://groups.inf.ed.ac.uk/ami/corpus/). We make use of force alignment to rectify the errors inherent in human annotations of the AMI dataset.
 
@@ -9,7 +17,7 @@ This is a project on overlapped speech detection in multi-party conversation mee
 
 ## Folder Structure and Description
 ### Codes
-1. *Feature Handling Codes*:
+#### 1. *Feature Handling Codes*:
   - htkmfc.py : python interface to reading and writing htk files
   - htk_dataprep.sh : shell script to generate htk feature files
   - mfcc_config.cfg : config file for mel spectorgram[fbank] feature generation
@@ -23,7 +31,7 @@ This is a project on overlapped speech detection in multi-party conversation mee
   - kurtosis_extractor.py : Code to extract kurtosis
   - sfm.py : Code to extract spectral flatness measure features
   
-2. *Model_Train_Test_Codes*:
+#### 2. *Model_Train_Test_Codes*:
   - rnn.py : Code for final lstm model in Keras
   - cnn.py : CNN model
   - dnn.py : Three layered dnn
